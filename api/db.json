@@ -1,0 +1,25 @@
+{
+  "documents": [
+    {
+      "hash" : "123",
+      "path" : "path/path2",
+      "name" : "Kusen_lato_2018",
+      "tag" : "#tag1"
+    },
+    {
+      "hash" : "123",
+      "path" : "path/path2",
+      "name" : "Kusen_lato_2018",
+      "tag" : "#tag1"
+    },
+    {
+      "hash" : "123",
+      "path" : "path/path2",
+      "name" : "Kusen_lato_2018",
+      "tag" : "#tag1"
+    }
+
+
+  ]
+
+}
