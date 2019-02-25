@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class DocTreeComponent implements OnInit {
 
-  @Input() docs : Document[];
+  @Input() docs: Document[];
 
   constructor() { }
 

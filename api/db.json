@@ -18,8 +18,53 @@
       "name" : "Kusen_lato_2018",
       "tag" : "#tag1"
     }
-
-
+  ],
+  "documents2":  {
+    "folder1": {
+      "documents" : 
+  [
+    {
+      "hash" : "123",
+      "path" : "path/path2",
+      "name" : "Kusen_lato_2018",
+      "tag" : "#tag1"
+    },
+    {
+      "hash" : "123",
+      "path" : "path/path2",
+      "name" : "Kusen_lato_2018",
+      "tag" : "#tag1"
+    },
+    {
+      "hash" : "123",
+      "path" : "path/path2",
+      "name" : "Kusen_lato_2018",
+      "tag" : "#tag1"
+    }
+  ],
+  "folders": [
   ]
+},
+  "folder2": [
+    {
+      "hash" : "123",
+      "path" : "path/path2",
+      "name" : "Kusen_lato_2018",
+      "tag" : "#tag1"
+    },
+    {
+      "hash" : "123",
+      "path" : "path/path2",
+      "name" : "Kusen_lato_2018",
+      "tag" : "#tag1"
+    },
+    {
+      "hash" : "123",
+      "path" : "path/path2",
+      "name" : "Kusen_lato_2018",
+      "tag" : "#tag1"
+    }
+  ]
+}
 
 }

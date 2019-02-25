@@ -8,15 +8,15 @@ import {Document} from 'src/app/model/document';
   styleUrls: ['./doc-navi.component.css']
 })
 export class DocNaviComponent implements OnInit {
-  
+
   documents: Document[];
 
-  constructor(private docService:DocumentService) { }
+  constructor(private docService: DocumentService) { }
 
   ngOnInit() {
     this.docService.getDocs().subscribe({
-      next:(docs) =>  this.documents = docs,
-      error:() => alert("doc get fail")
+      next: (docs) =>  this.documents = docs,
+      error: () => alert('doc get fail')
     });
   }
 
