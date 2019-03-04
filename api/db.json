@@ -21,50 +21,76 @@
   ],
   "documents2":  {
     "folder1": {
-      "documents" : 
-  [
+      "documents" : [
+      {
+        "hash" : "123",
+        "path" : "path/path2",
+        "name" : "Kusen_lato_2018",
+        "tag" : "#tag1"
+      },
+      {
+        "hash" : "123",
+        "path" : "path/path2",
+        "name" : "Kusen_lato_2018",
+        "tag" : "#tag1"
+      },
+      {
+        "hash" : "123",
+        "path" : "path/path2",
+        "name" : "Kusen_lato_2018",
+        "tag" : "#tag1"
+      }
+    ],
+    "folders": [
+    ]
+  },
+    "folder2": [
+      {
+        "hash" : "123",
+        "path" : "path/path2",
+        "name" : "Kusen_lato_2018",
+        "tag" : "#tag1"
+      },
+      {
+        "hash" : "123",
+        "path" : "path/path2",
+        "name" : "Kusen_lato_2018",
+        "tag" : "#tag1"
+      },
+      {
+        "hash" : "123",
+        "path" : "path/path2",
+        "name" : "Kusen_lato_2018",
+        "tag" : "#tag1"
+      }
+    ]
+  },
+  "kusenNodes" : [
     {
       "hash" : "123",
       "path" : "path/path2",
-      "name" : "Kusen_lato_2018",
-      "tag" : "#tag1"
+      "name" : "1Kusen_lato_2018",
+      "tag" : "#tag1",
+      "children": [
+        {
+          "hash" : "23",
+          "path" : "path/path2/path3",
+          "name" : "Kusen_lato_2018_2",
+          "tag" : "#tag1"
+        },
+        {
+          "hash" : "23",
+          "path" : "path/path2/path3",
+          "name" : "Kusen_lato_2018_2",
+          "tag" : "#tag1"
+        }
+      ]
     },
     {
       "hash" : "123",
       "path" : "path/path2",
-      "name" : "Kusen_lato_2018",
-      "tag" : "#tag1"
-    },
-    {
-      "hash" : "123",
-      "path" : "path/path2",
-      "name" : "Kusen_lato_2018",
+      "name" : "2Kusen_lato_2018",
       "tag" : "#tag1"
     }
-  ],
-  "folders": [
   ]
-},
-  "folder2": [
-    {
-      "hash" : "123",
-      "path" : "path/path2",
-      "name" : "Kusen_lato_2018",
-      "tag" : "#tag1"
-    },
-    {
-      "hash" : "123",
-      "path" : "path/path2",
-      "name" : "Kusen_lato_2018",
-      "tag" : "#tag1"
-    },
-    {
-      "hash" : "123",
-      "path" : "path/path2",
-      "name" : "Kusen_lato_2018",
-      "tag" : "#tag1"
-    }
-  ]
-}
-
 }
