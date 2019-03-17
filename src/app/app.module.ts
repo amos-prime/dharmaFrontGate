@@ -8,19 +8,23 @@ import { DocTreeComponent } from './component/doc-tree/doc-tree.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatTreeModule } from '@angular/material/tree';
 import { MatIconModule } from '@angular/material/icon';
+import { DocShowContainerComponent } from './container/doc-show-container/doc-show-container.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     DocNaviComponent,
     SearchComponent,
-    DocTreeComponent
+    DocTreeComponent,
+    DocShowContainerComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     MatTreeModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

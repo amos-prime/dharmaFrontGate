@@ -1,9 +1,8 @@
 import { Component, OnInit, Input, OnChanges } from '@angular/core';
-import {NestedTreeControl} from '@angular/cdk/tree';
-import {MatTreeNestedDataSource} from '@angular/material/tree';
-import { MatIconModule } from '@angular/material/icon';
-import {Document} from 'src/app/model/document';
+import { NestedTreeControl } from '@angular/cdk/tree';
+import { MatTreeNestedDataSource } from '@angular/material/tree';
 import { KusenNode } from 'src/app/model/kusenNode';
+import { DocumentService } from 'src/app/service/document.service';
 
 @Component({
   selector: 'app-doc-tree',
@@ -15,10 +14,21 @@ export class DocTreeComponent implements OnInit, OnChanges {
   treeControl = new NestedTreeControl<KusenNode>(node => node.children);
   dataSource = new MatTreeNestedDataSource<KusenNode>();
 
+  constructor(private documentService: DocumentService) {}
+
   @Input() data: KusenNode[];
 
-  constructor() {
+  onClick(node: KusenNode) {
+    //if(!this.hasChild(node)) {
+      this.showDocument(node.hash);
+   //};
   }
+
+  showDocument(documentHash) {
+    this.documentService.loadDocument(documentHash);
+  }
+
+  hasChild = (_: number, node: KusenNode) => !!node.children && node.children.length > 0;
 
   ngOnInit() {
   }  
@@ -29,6 +39,4 @@ export class DocTreeComponent implements OnInit, OnChanges {
       this.dataSource.data = this.data;
     }
   }
-
-  hasChild = (_: number, node: KusenNode) => !!node.children && node.children.length > 0;
 }

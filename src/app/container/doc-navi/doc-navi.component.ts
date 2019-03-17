@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { DocumentService } from 'src/app/service/document.service';
-import {Document} from 'src/app/model/document';
 import { KusenNode } from 'src/app/model/kusenNode';
 
 @Component({
@@ -20,5 +19,4 @@ export class DocNaviComponent implements OnInit {
       error: () => alert('kusens get fail')
     });
   }
-
 }
