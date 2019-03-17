@@ -10,16 +10,11 @@ import { KusenNode } from 'src/app/model/kusenNode';
 })
 export class DocNaviComponent implements OnInit {
 
-  documents: Document[];
   kusens: KusenNode[];
 
   constructor(private docService: DocumentService) { }
 
   ngOnInit() {
-    this.docService.getDocs().subscribe({
-      next: (docs) =>  this.documents = docs,
-      error: () => alert('doc get fail')
-    });
     this.docService.getKusens().subscribe({
       next: (kusens) =>  this.kusens = kusens,
       error: () => alert('kusens get fail')

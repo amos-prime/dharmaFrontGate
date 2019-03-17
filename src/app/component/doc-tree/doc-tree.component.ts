@@ -11,7 +11,6 @@ import { KusenNode } from 'src/app/model/kusenNode';
   styleUrls: ['./doc-tree.component.css']
 })
 export class DocTreeComponent implements OnInit, OnChanges {
-    @Input() docs: Document[];
 
   treeControl = new NestedTreeControl<KusenNode>(node => node.children);
   dataSource = new MatTreeNestedDataSource<KusenNode>();
@@ -19,12 +18,9 @@ export class DocTreeComponent implements OnInit, OnChanges {
   @Input() data: KusenNode[];
 
   constructor() {
-    //this.dataSource.data = KUSEN_DATA;
-    //this.dataSource.data = this.data;
   }
 
   ngOnInit() {
-    //this.dataSource.data = this.data;
   }  
 
   ngOnChanges(changes: import("@angular/core").SimpleChanges): void {
