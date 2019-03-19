@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { DocumentService } from 'src/app/service/document.service';
+import { KusenDetail } from 'src/app/model/kusenDetail';
 
 @Component({
   selector: 'app-doc-show-container',
@@ -8,7 +9,7 @@ import { DocumentService } from 'src/app/service/document.service';
 })
 export class DocShowContainerComponent implements OnInit, OnDestroy {
 
-  docToShow: string;
+  docToShow: KusenDetail;
 
   constructor(private documentService: DocumentService) { }
 

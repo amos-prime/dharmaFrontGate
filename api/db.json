@@ -65,7 +65,7 @@
       }
     ]
   },
-  "kusenNodes" : [
+  "kusens" : [
     {
       "hash" : "12399",
       "path" : "path/path2",
@@ -105,6 +105,48 @@
       "path" : "path/path2",
       "name" : "2Kusen_lato_2018",
       "tag" : "#tag1"
+    }
+  ],
+  "kusen" : [
+    {
+      "id" : "123",
+      "hash" : "123",
+      "path" : "path/path123",
+      "name" : "2Kusen_lato_2018_123",
+      "tag" : "#tag123",
+      "text" : "kusen123Text"
+    },
+    {
+      "id" : "1233",
+      "hash" : "1233",
+      "path" : "path/path1233",
+      "name" : "Kusen_lato_2018_1233",
+      "tag" : "#tag1233",
+      "text" : "kusen1233Text"
+    },
+    {
+      "id" : "23555",
+      "hash" : "23555",
+      "path" : "path/path23555",
+      "name" : "Kusen_lato_2018_23555",
+      "tag" : "#tag23555",
+      "text" : "kusen23555Text"
+    },
+    {
+      "id" : "236666",
+      "hash" : "236666",
+      "path" : "path/path236666",
+      "name" : "Kusen_lato_2018_236666",
+      "tag" : "#tag236666",
+      "text" : "kusen236666Text"
+    },
+    {
+      "id" : "2399",
+      "hash" : "2399",
+      "path" : "path/path2399",
+      "name" : "Kusen_lato_2018_2399",
+      "tag" : "#tag2399",
+      "text" : "kusen2399Text"
     }
   ]
 }
