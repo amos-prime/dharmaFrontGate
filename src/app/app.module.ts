@@ -6,10 +6,9 @@ import { DocNaviComponent } from './container/doc-navi/doc-navi.component';
 import { SearchComponent } from './component/search/search.component';
 import { DocTreeComponent } from './component/doc-tree/doc-tree.component';
 import { HttpClientModule } from '@angular/common/http';
-import { MatTreeModule } from '@angular/material/tree';
-import { MatIconModule } from '@angular/material/icon';
 import { DocShowContainerComponent } from './container/doc-show-container/doc-show-container.component';
 import { FormsModule } from '@angular/forms';
+import { MaterialModule } from './material.module';
 
 @NgModule({
   declarations: [
@@ -22,11 +21,10 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     HttpClientModule,
-    MatTreeModule,
-    MatIconModule,
-    FormsModule
+    FormsModule,
+    MaterialModule
   ],
-  providers: [],
+  providers: [MaterialModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

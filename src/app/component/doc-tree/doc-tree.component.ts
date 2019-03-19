@@ -19,9 +19,7 @@ export class DocTreeComponent implements OnInit, OnChanges {
   @Input() data: KusenNode[];
 
   onClick(node: KusenNode) {
-    //if(!this.hasChild(node)) {
-      this.showDocument(node.hash);
-   //};
+    this.showDocument(node.hash);
   }
 
   showDocument(documentHash) {
