@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { DocumentService } from 'src/app/service/document.service';
 
 @Component({
@@ -6,7 +6,7 @@ import { DocumentService } from 'src/app/service/document.service';
   templateUrl: './doc-show-container.component.html',
   styleUrls: ['./doc-show-container.component.css']
 })
-export class DocShowContainerComponent implements OnInit {
+export class DocShowContainerComponent implements OnInit, OnDestroy {
 
   docToShow: string;
 
@@ -18,4 +18,7 @@ export class DocShowContainerComponent implements OnInit {
     })
   }
 
+  ngOnDestroy() {
+    this.documentService.actualKusenChanged.unsubscribe();
+  }
 }
