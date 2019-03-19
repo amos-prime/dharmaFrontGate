@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { DocShowContainerComponent } from './container/doc-show-container/doc-show-container.component';
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from './material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MaterialModule } from './material.module';
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    MaterialModule
+    MaterialModule,
+    FlexLayoutModule
   ],
   providers: [MaterialModule],
   bootstrap: [AppComponent]
