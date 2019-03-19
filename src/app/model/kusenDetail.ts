@@ -8,12 +8,14 @@ export interface KusenDetailAttrs {
 }
 
 export class KusenDetail {
+  static emptyKusen = new KusenDetail();
+
     id: string;
     hash: string;
     path: string;
     name: string;
     tag: string;
-    text: string;
+    text: string = "";
 
     constructor(attrs: Partial<KusenDetailAttrs> = {}) {
         this.id = attrs.id;

@@ -3,7 +3,6 @@ import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
 import { KusenNode, KusenNodeAttrs } from '../model/kusenNode';
-import { debug } from 'util';
 import { KusenDetail } from '../model/kusenDetail';
 
 @Injectable({

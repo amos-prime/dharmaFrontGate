@@ -9,14 +9,14 @@ import { KusenDetail } from 'src/app/model/kusenDetail';
 })
 export class DocShowContainerComponent implements OnInit, OnDestroy {
 
-  docToShow: KusenDetail;
+  docToShow = KusenDetail.emptyKusen;
 
   constructor(private documentService: DocumentService) { }
 
   ngOnInit() {
-    this.documentService.actualKusenChanged.subscribe(docHash => {
-      this.docToShow = docHash;
-    })
+    this.documentService.actualKusenChanged.subscribe(
+      docToShow => this.docToShow = docToShow
+    )
   }
 
   ngOnDestroy() {
